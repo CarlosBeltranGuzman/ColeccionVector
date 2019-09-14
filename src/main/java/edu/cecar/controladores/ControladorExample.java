@@ -19,7 +19,7 @@ import java.util.Vector;
 public class ControladorExample {
     public Vector<Example> consultarExample() throws SQLException{
         Vector<Example> resultado = new Vector<>();
-        PreparedStatement ps = getInstance().prepareStatement("Select * " + "from manpower.examples limit 1000");
+        PreparedStatement ps = getInstance().prepareStatement("Select * " + "from manpower.examples");
         ResultSet resultSet = ps.executeQuery();
         
         while (resultSet.next()) {            
